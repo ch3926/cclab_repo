@@ -1,0 +1,72 @@
+/* These are CSS stylings for the html file */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+}
+
+h1 {
+  background-color: "grey";
+  font-size: 60px;
+  padding: 3px;
+  color: white;
+  font-family: "Rubik Bubbles";
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+h3 {
+  font-family: "Courier New";
+  text-align: center;
+  color: purple;
+}
+
+P {
+  background-color: "grey";
+  font-size: 28px;
+  padding: 6px;
+  color: white;
+  font-family: "Rubik Bubbles"; /* From google fonts */
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+legend {
+  background-color: "white";
+  font-size: 20px;
+  padding: 6px;
+  color: white;
+  font-family: "Rubik Bubbles";
+  text-align: center;
+  letter-spacing: 2.5px;
+}
+
+canvas {
+  border-radius: 75px;
+  padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 500px;
+}
+
+button {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 170px;
+  height: 40px;
+  background-color: #eb6b6f;
+  border: 5px inset #ecc19c;
+  color: white;
+  font-family: "Courier New";
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
