@@ -20,14 +20,26 @@ canvas {
 
 }
 
+
+/* main div selector */
+div { 
+  padding: 10px;
+  margin: 10px;
+}
+
+/* class for distinguishing div selector containers */
+/* this one is for the instructions under "POND SCUM" */
+.instructions {
+  padding: 6px;
+}
+
 #canvasContainer {
   display: block;
 }
 
-/* class defining text color and background color behind text */
+/* class defining text color */
 .textColor {
   color: white;
-  background-color: "grey";
 }
 
 /* determine's the appearance of my link before any actions have been done to it */
@@ -80,7 +92,6 @@ P {
 /* for the instruction texts */
 h2 {
   font-size: 20px;
-  padding: 6px;
   font-family: "Rubik Bubbles";
   text-align: center;
   letter-spacing: 2.5px;
