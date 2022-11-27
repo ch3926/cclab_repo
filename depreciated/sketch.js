@@ -12,10 +12,12 @@ function preload() {
 }
 
 function setup() {
+  // two lines below are for canvas placement on webpage
+  let canvas = createCanvas(imgW, imgH);
+  canvas.parent("canvasContainer");
+
   imgW = img.width;
   imgH = img.height;
-  let canvas = createCanvas(imgW, imgH);
-  canvas.parent("canvas_placement"); // placement for interactive window
   user = new User(imgW / 2, imgH / 2);
 
   // adding particles
@@ -26,6 +28,7 @@ function setup() {
   // loading image setup
   pixelDensity(1);
 }
+
 
 function draw() {
   // flashlight --------------------- reference: https://editor.p5js.org/ebenjmuse/sketches/rJUFyTjbz

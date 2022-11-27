@@ -7,7 +7,7 @@ body {
   background-color: #1c1c1c;
 }
 
-canvas{
+#canvasContainer {
   border-radius: 75px;
   padding-top: 20px;
   padding-left: 0;
@@ -17,6 +17,7 @@ canvas{
   display: block;
   width: 500px;
 }
+
 
 h1 {
   background-color: "grey";

@@ -15,7 +15,7 @@ function setup() {
   imgW = img.width;
   imgH = img.height;
   let canvas = createCanvas(imgW, imgH);
-  canvas.parent("canvas_placement"); // placement for interactive window
+  canvas.parent("canvasContainer"); // placement for interactive window
   user = new User(imgW / 2, imgH / 2);
 
   // adding particles
