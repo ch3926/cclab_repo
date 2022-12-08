@@ -1,9 +1,10 @@
 class mascot {
-  constructor(startX, startY) {
+  constructor(startX, startY, drumPng) {
     this.x = startX;
     this.y = startY;
     this.speed = 5.5;
     this.swaySpeed = 0.1;
+    this.drum = drumPng
   }
 
   updateSpeedSway(drummingSpeed, swayingSpeed){
@@ -20,6 +21,7 @@ class mascot {
   display() {
     push();
     translate(this.x, this.y);
+    image(this.drum, -115,10, 225, 125);
     this.drawArms(0, 0, this.speed); // call function draw arms
     noStroke();
     // creature head
@@ -36,6 +38,7 @@ class mascot {
     // mouth
     rect(-14, 0, 30, 8)
 
+    
 
     pop();
   }

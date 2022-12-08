@@ -26,6 +26,7 @@ let numSamples = 4;
 // button for play/pause, slider for controlling BPM / speed
 let playButton;
 let slider;
+let drum;
 
 // other settings
 let a = 40; // cell height variable
@@ -80,11 +81,14 @@ mix.toMaster();
 //8n means 8th notes
 Tone.Transport.scheduleRepeat(currentBeat, "8n");
 
+function preload(){
+  drum = loadImage('drum.png');
+}
 
 function setup() {
 
   // create an instance of the drummer creature
-  mascot = new mascot(340, 600);
+  mascot = new mascot(340, 570, drum);
   
   // create a bpm slider
   slider = createSlider(50, 200, 100);
