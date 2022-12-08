@@ -15,11 +15,12 @@ class mascot {
   update() {
     this.x = this.x + sin(frameCount * 0.1) * this.swaySpeed; // make him move side to side!
   }
+
+  // function for drumer's appearance
   display() {
     push();
     translate(this.x, this.y);
-
-    drawArms(0, 0, this.speed);
+    this.drawArms(0, 0, this.speed); // call function draw arms
     noStroke();
     // creature head
     fill("#fff6d3");
@@ -33,25 +34,24 @@ class mascot {
     ellipse(-50, -40, 30, 30);
     ellipse(50, -40, 30, 30);
     // mouth
-    rect(-14, 0, 30, 8);
+    rect(-14, 0, 30, 8)
 
-    //arms - they are drumming!!
-    function drawArms(x, y, speed) {
-      push();
-      let angle = frameCount / speed;
-      rotate(radians(cos(angle) * 8));
-      translate(0, -10);
-      strokeWeight(15);
-      stroke("#7c3f58");
 
-      //left arm
-      curve(-7, 17, -37, 47, -58, 28, -19, 40);
+    pop();
+  }
 
-      //right arm
-      curve(7, 17, 37, 49, 58, 30, 19, 42);
-      pop();
-    }
+  //arms - they are drumming!!
+  drawArms(x, y, speed) {
+    push();
+    let angle = frameCount / speed;
+    rotate(radians(cos(angle) * 8));
+    translate(0, -10);
+    strokeWeight(15);
+    stroke("#7c3f58");
 
+    // arms
+    curve(-7, 17, -37, 47, -58, 28, -19, 40); //left arm
+    curve(7, 17, 37, 49, 58, 30, 19, 42); //right arm
     pop();
   }
 }
